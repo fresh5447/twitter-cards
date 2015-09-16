@@ -31,7 +31,13 @@ var fetchTweets = function(req, res){
 
 };
 
+app.use('/', express.static(path.join(__dirname, 'public')));
+
 app.get('/api', fetchTweets);
+
+app.get('/', function(req, res){
+	res.sendFile('index.html');
+})
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
