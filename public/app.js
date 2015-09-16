@@ -1,3 +1,10 @@
+var data = [
+  {author: "just_be_dougin", text: "This is going to be a tweet!"},
+  {author: "Do_not_be_dougin", text: "This is going to be another tweet!"},
+  {author: "Do_not_be_dougin", text: "This is going to be another tweet!"},
+  {author: "Do_not_be_dougin", text: "This is going to be another tweet!"}
+];
+
 var Tweet = React.createClass({
 	render: function(){
 		return (
@@ -12,13 +19,19 @@ var Tweet = React.createClass({
 });
 
 var TweetList = React.createClass({
-  render: function() {
-    return (
-      <div className="tweetList">
-        <h1 Tweet author="Just_be_dougin"> This guys an author</h1>
-        <h1 Tweet author="Don't be douging"> This guys another author </h1> 
-      </div>
-    );
+	render: function(){
+	var tweetNodes = this.props.data.map(function(tweet){
+		return (
+			<Tweet author={tweet.author}>
+				{tweet.text}
+			</Tweet>
+			);
+	});
+	return (
+		<div className="tweetList">
+			{tweetNodes}
+		</div>
+		)
   }
 });
 
@@ -37,14 +50,14 @@ var TweetBox = React.createClass({
 		return(
 			<div clasName="tweetBox">
 				<h1> Tweets </h1>
-				<TweetList />
+				<TweetList data={this.props.data}/>
 				<TweetForm />
 			</div>
 			);
 	}
 });
 
-React.render( <TweetBox />, document.getElementById('content'));
+React.render( <TweetBox data={data}/>, document.getElementById('content'));
 
 
 // TweetBox
