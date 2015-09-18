@@ -88,4 +88,4 @@ var TweetForm = React.createClass({
   }
 });
 
-React.render( <TweetBox url="http://localhost:4000/api/" />, document.getElementById('content'));
+React.render( <TweetBox url="http://localhost:4000/api/keyword/" />, document.getElementById('content'));
