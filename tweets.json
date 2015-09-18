@@ -1,4 +1,563 @@
-[
-  {"author": "Pete Hunt", "text": "This is one tweet"},
-  {"author": "Jordan Walke", "text": "This is *another* tweet"}
-]
+[{
+    "created_at": "Mon Sep 14 21:09:15 +0000 2015",
+    "id": 643531981695881200,
+    "id_str": "643531981695881216",
+    "text": "hello world!",
+    "source": "<a href=\"http://www.douglaswalter.co/\" rel=\"nofollow\">doug_test_app</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 857035806,
+        "id_str": "857035806",
+        "name": "Douglas Walter",
+        "screen_name": "Just_Be_Dougin",
+        "location": "The Cloud",
+        "description": "Software Developer and aspiring Technical Architect.",
+        "url": "http://t.co/FLnT94FzLi",
+        "entities": {
+            "url": {
+                "urls": [{
+                    "url": "http://t.co/FLnT94FzLi",
+                    "expanded_url": "http://www.DouglasWalter.co",
+                    "display_url": "DouglasWalter.co",
+                    "indices": [0, 22]
+                }]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 500,
+        "friends_count": 842,
+        "listed_count": 30,
+        "created_at": "Mon Oct 01 21:21:51 +0000 2012",
+        "favourites_count": 36,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 332,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/857035806/1363367736",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+}, {
+    "created_at": "Sat Aug 29 14:09:54 +0000 2015",
+    "id": 637628245601558500,
+    "id_str": "637628245601558528",
+    "text": "Learning React: Building A Real-Time Node and React Application http://t.co/JzITMkeclv #javascript via @scotch_io",
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 857035806,
+        "id_str": "857035806",
+        "name": "Douglas Walter",
+        "screen_name": "Just_Be_Dougin",
+        "location": "The Cloud",
+        "description": "Software Developer and aspiring Technical Architect.",
+        "url": "http://t.co/FLnT94FzLi",
+        "entities": {
+            "url": {
+                "urls": [{
+                    "url": "http://t.co/FLnT94FzLi",
+                    "expanded_url": "http://www.DouglasWalter.co",
+                    "display_url": "DouglasWalter.co",
+                    "indices": [0, 22]
+                }]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 500,
+        "friends_count": 842,
+        "listed_count": 30,
+        "created_at": "Mon Oct 01 21:21:51 +0000 2012",
+        "favourites_count": 36,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 332,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/857035806/1363367736",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 1,
+    "entities": {
+        "hashtags": [{
+            "text": "javascript",
+            "indices": [87, 98]
+        }],
+        "symbols": [],
+        "user_mentions": [{
+            "screen_name": "scotch_io",
+            "name": "Scotch Development",
+            "id": 1122906733,
+            "id_str": "1122906733",
+            "indices": [103, 113]
+        }],
+        "urls": [{
+            "url": "http://t.co/JzITMkeclv",
+            "expanded_url": "http://scotch.io/tutorials/javascript/learning-react-building-a-real-time-node-and-react-application",
+            "display_url": "scotch.io/tutorials/java…",
+            "indices": [64, 86]
+        }]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}, {
+    "created_at": "Wed Aug 26 10:19:54 +0000 2015",
+    "id": 636483198244008000,
+    "id_str": "636483198244007936",
+    "text": "Looking for some advice from fellow devs: @stackoverflow #javascript\n\nhttp://t.co/NIydSXXUUD",
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 857035806,
+        "id_str": "857035806",
+        "name": "Douglas Walter",
+        "screen_name": "Just_Be_Dougin",
+        "location": "The Cloud",
+        "description": "Software Developer and aspiring Technical Architect.",
+        "url": "http://t.co/FLnT94FzLi",
+        "entities": {
+            "url": {
+                "urls": [{
+                    "url": "http://t.co/FLnT94FzLi",
+                    "expanded_url": "http://www.DouglasWalter.co",
+                    "display_url": "DouglasWalter.co",
+                    "indices": [0, 22]
+                }]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 500,
+        "friends_count": 842,
+        "listed_count": 30,
+        "created_at": "Mon Oct 01 21:21:51 +0000 2012",
+        "favourites_count": 36,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 332,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/857035806/1363367736",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 1,
+    "entities": {
+        "hashtags": [{
+            "text": "javascript",
+            "indices": [57, 68]
+        }],
+        "symbols": [],
+        "user_mentions": [{
+            "screen_name": "StackOverflow",
+            "name": "Stack Overflow",
+            "id": 128700677,
+            "id_str": "128700677",
+            "indices": [42, 56]
+        }],
+        "urls": [{
+            "url": "http://t.co/NIydSXXUUD",
+            "expanded_url": "http://www.quora.com/Is-there-a-happy-medium-between-StackOverflow-and-Quora",
+            "display_url": "quora.com/Is-there-a-hap…",
+            "indices": [70, 92]
+        }]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}, {
+    "created_at": "Tue Aug 25 15:03:21 +0000 2015",
+    "id": 636192141459484700,
+    "id_str": "636192141459484674",
+    "text": "I will probably get hate mail for asking such a general question on @StackOverflow but this code's got me thinking.. http://t.co/qkhsf8GRb7",
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 857035806,
+        "id_str": "857035806",
+        "name": "Douglas Walter",
+        "screen_name": "Just_Be_Dougin",
+        "location": "The Cloud",
+        "description": "Software Developer and aspiring Technical Architect.",
+        "url": "http://t.co/FLnT94FzLi",
+        "entities": {
+            "url": {
+                "urls": [{
+                    "url": "http://t.co/FLnT94FzLi",
+                    "expanded_url": "http://www.DouglasWalter.co",
+                    "display_url": "DouglasWalter.co",
+                    "indices": [0, 22]
+                }]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 500,
+        "friends_count": 842,
+        "listed_count": 30,
+        "created_at": "Mon Oct 01 21:21:51 +0000 2012",
+        "favourites_count": 36,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 332,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/857035806/1363367736",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [{
+            "screen_name": "StackOverflow",
+            "name": "Stack Overflow",
+            "id": 128700677,
+            "id_str": "128700677",
+            "indices": [68, 82]
+        }],
+        "urls": [{
+            "url": "http://t.co/qkhsf8GRb7",
+            "expanded_url": "http://bit.ly/1NRKJZx",
+            "display_url": "bit.ly/1NRKJZx",
+            "indices": [117, 139]
+        }]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}, {
+    "created_at": "Thu Aug 20 10:53:00 +0000 2015",
+    "id": 634317201936412700,
+    "id_str": "634317201936412672",
+    "text": "This weeks office: #france. #LearnToCode @mtcodeschool #javascript http://t.co/cYd8yxQebv",
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 857035806,
+        "id_str": "857035806",
+        "name": "Douglas Walter",
+        "screen_name": "Just_Be_Dougin",
+        "location": "The Cloud",
+        "description": "Software Developer and aspiring Technical Architect.",
+        "url": "http://t.co/FLnT94FzLi",
+        "entities": {
+            "url": {
+                "urls": [{
+                    "url": "http://t.co/FLnT94FzLi",
+                    "expanded_url": "http://www.DouglasWalter.co",
+                    "display_url": "DouglasWalter.co",
+                    "indices": [0, 22]
+                }]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 500,
+        "friends_count": 842,
+        "listed_count": 30,
+        "created_at": "Mon Oct 01 21:21:51 +0000 2012",
+        "favourites_count": 36,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 332,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3383694609/045358e6863135b69dce871f104ce838_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/857035806/1363367736",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": {
+        "id": "2e34d9639d728bdd",
+        "url": "https://api.twitter.com/1.1/geo/id/2e34d9639d728bdd.json",
+        "place_type": "city",
+        "name": "Dhuizon",
+        "full_name": "Dhuizon, Centre",
+        "country_code": "FR",
+        "country": "France",
+        "contained_within": [],
+        "bounding_box": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [1.6262438, 47.5430839],
+                    [1.738891, 47.5430839],
+                    [1.738891, 47.6264871],
+                    [1.6262438, 47.6264871]
+                ]
+            ]
+        },
+        "attributes": {}
+    },
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+        "hashtags": [{
+            "text": "france",
+            "indices": [19, 26]
+        }, {
+            "text": "LearnToCode",
+            "indices": [28, 40]
+        }, {
+            "text": "javascript",
+            "indices": [55, 66]
+        }],
+        "symbols": [],
+        "user_mentions": [{
+            "screen_name": "mtcodeschool",
+            "name": "Montana Code School",
+            "id": 3249008768,
+            "id_str": "3249008768",
+            "indices": [41, 54]
+        }],
+        "urls": [],
+        "media": [{
+            "id": 634317183733100500,
+            "id_str": "634317183733100544",
+            "indices": [67, 89],
+            "media_url": "http://pbs.twimg.com/media/CM2MHitWcAAy0bw.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CM2MHitWcAAy0bw.jpg",
+            "url": "http://t.co/cYd8yxQebv",
+            "display_url": "pic.twitter.com/cYd8yxQebv",
+            "expanded_url": "http://twitter.com/Just_Be_Dougin/status/634317201936412672/photo/1",
+            "type": "photo",
+            "sizes": {
+                "small": {
+                    "w": 340,
+                    "h": 453,
+                    "resize": "fit"
+                },
+                "medium": {
+                    "w": 600,
+                    "h": 800,
+                    "resize": "fit"
+                },
+                "thumb": {
+                    "w": 150,
+                    "h": 150,
+                    "resize": "crop"
+                },
+                "large": {
+                    "w": 768,
+                    "h": 1024,
+                    "resize": "fit"
+                }
+            }
+        }]
+    },
+    "extended_entities": {
+        "media": [{
+            "id": 634317183733100500,
+            "id_str": "634317183733100544",
+            "indices": [67, 89],
+            "media_url": "http://pbs.twimg.com/media/CM2MHitWcAAy0bw.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CM2MHitWcAAy0bw.jpg",
+            "url": "http://t.co/cYd8yxQebv",
+            "display_url": "pic.twitter.com/cYd8yxQebv",
+            "expanded_url": "http://twitter.com/Just_Be_Dougin/status/634317201936412672/photo/1",
+            "type": "photo",
+            "sizes": {
+                "small": {
+                    "w": 340,
+                    "h": 453,
+                    "resize": "fit"
+                },
+                "medium": {
+                    "w": 600,
+                    "h": 800,
+                    "resize": "fit"
+                },
+                "thumb": {
+                    "w": 150,
+                    "h": 150,
+                    "resize": "crop"
+                },
+                "large": {
+                    "w": 768,
+                    "h": 1024,
+                    "resize": "fit"
+                }
+            }
+        }]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}]
