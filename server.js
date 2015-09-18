@@ -36,13 +36,7 @@ var fetchTweets = function(req, res){
 
   T.get('statuses/user_timeline', { screen_name: twitterHandle, count: 5 }, function(err, data, response) {
 
-    var result = _.map(data, function(tweet){
-
-      return tweet.text;
-
-    })
-
-    res.send(result)
+    res.send(data);
 
   });
 

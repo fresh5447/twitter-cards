@@ -1,17 +1,18 @@
 var Tweet = React.createClass({
-	render: function(){
-		return (
-			<div className="tweet">
-				<h2 className="twitterHandle">
-					{this.props.tweet}
-				</h2>
-				</div>
-			);
-	}
+  render: function(){
+    return (
+      <div className="tweet">
+        <h2 className="twitterHandle">
+          <p>{'@' + this.props.tweet.user.screen_name}</p>
+          <p>{this.props.tweet.text}</p>
+        </h2>
+        </div>
+      );
+  }
 });
 
 var TweetBox = React.createClass({
-console.log("just before handleTweetSubmit" + tweets, this.props.url, this.props.url+tweets);
+// console.log("just before handleTweetSubmit" + tweets, this.props.url, this.props.url+tweets);
 
 handleTweetSubmit: function(tweet){
         var tweets = this.state.data;
@@ -26,6 +27,7 @@ handleTweetSubmit: function(tweet){
                 console.error(this.props.url, status, err.toString());
             }.bind(this)
         });
+      },
   getInitialState: function() {
     return {data: []};
   },
@@ -33,7 +35,7 @@ handleTweetSubmit: function(tweet){
     return (
       <div className="tweetBox">
         <h1>Tweets</h1>
-        <TweetList data={this.props.data} />
+        <TweetList data={this.state.data} />
         <TweetForm onTweetSubmit={this.handleTweetSubmit} />
       </div>
     );
@@ -42,7 +44,7 @@ handleTweetSubmit: function(tweet){
 
 var TweetList = React.createClass({
   render: function() {
-    var tweetNodes = this.state.data.map(function (tweet) {
+    var tweetNodes = this.props.data.map(function (tweet) {
       return (
         <Tweet tweet={tweet}/>
       );
@@ -58,26 +60,26 @@ var TweetList = React.createClass({
 
 
 var TweetForm = React.createClass({
-	handleSubmit: function(e){
-		e.preventDefault();
-		var twitterHandle = React.findDOMNode(this.refs.twitterHandle).value.trim();
-		if(!twitterHandle){
-			console.log("no twitter handle");
-			return;
-		}
-		console.log(twitterHandle);
-		this.props.onTweetSubmit({twitterHandle: twitterHandle});
-		React.findDOMNode(this.refs.twitterHandle);
-	}
+  handleSubmit: function(e){
+    e.preventDefault();
+    var twitterHandle = React.findDOMNode(this.refs.twitterHandle).value.trim();
+    if(!twitterHandle){
+      console.log("no twitter handle");
+      return;
+    }
+    console.log(twitterHandle);
+    this.props.onTweetSubmit({twitterHandle: twitterHandle});
+    React.findDOMNode(this.refs.twitterHandle);
+  }
 ,
-  	render: function() {
+    render: function() {
     return (
-    	<form className="tweetForm" onSubmit={this.handleSubmit}>
-    		<input type="text" ref="twitterHandle" placeholder="Twitter Handle" />
-    		<input type="submit" value="POST" />
-    	</form> 
+      <form className="tweetForm" onSubmit={this.handleSubmit}>
+        <input type="text" ref="twitterHandle" placeholder="Twitter Handle" />
+        <input type="submit" value="POST" />
+      </form>
     );
   }
 });
 
-React.render( <TweetBox url="http://localhost:3000/api/" />, document.getElementById('content'));
+React.render( <TweetBox url="http://localhost:4000/api/" />, document.getElementById('content'));
