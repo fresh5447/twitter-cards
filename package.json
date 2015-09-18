@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/fresh5447/twitter-cards",
   "dependencies": {
+    "axios": "^0.5.4",
     "body-parser": "^1.14.0",
     "dotenv": "^1.2.0",
     "express": "^4.13.3",
