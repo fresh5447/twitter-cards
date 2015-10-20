@@ -35,9 +35,7 @@ var fetchTweets = function(req, res){
   var twitterHandle = req.params.twitterHandle;
 
   T.get('statuses/user_timeline', { screen_name: twitterHandle, count: 10 }, function(err, data, response) {
-
     res.send(data);
-
   });
 
 };
@@ -46,14 +44,14 @@ var fetchKeyword = function(req,res){
   var keyword = req.params.keyword;
   
   T.get('search/tweets', { q: keyword +' since:2011-11-11', count: 10 }, function(err, data, response) {
-    console.log(data)
+    res.send(data)
   });
 
 };
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.use('/api/:twitterHandle', fetchTweets);
+app.use('/api/handle/:twitterHandle', fetchTweets);
 app.use('/api/word/:keyword', fetchKeyword);
 
 app.get('/', function(req, res){
